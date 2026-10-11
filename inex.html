@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Auction Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Online Auction Platform</h1>
+    <p>Discover products. Place your bids. Win your favorites.</p>
+  </header>
+
+  <main>
+    <h2>Available Auctions</h2>
+    <section class="products">
+      <article class="product">
+        <h3>Smartphone</h3>
+        <p>Current bid: ₹5,000</p>
+        <input id="bid1" type="number" min="5001" placeholder="Enter bid">
+        <button onclick="placeBid('bid1','price1')">Place Bid</button>
+        <p id="price1">Highest bid: ₹5,000</p>
+      </article>
+
+      <article class="product">
+        <h3>Laptop</h3>
+        <p>Current bid: ₹25,000</p>
+        <input id="bid2" type="number" min="25001" placeholder="Enter bid">
+        <button onclick="placeBid('bid2','price2')">Place Bid</button>
+        <p id="price2">Highest bid: ₹25,000</p>
+      </article>
+
+      <article class="product">
+        <h3>Smart Watch</h3>
+        <p>Current bid: ₹2,000</p>
+        <input id="bid3" type="number" min="2001" placeholder="Enter bid">
+        <button onclick="placeBid('bid3','price3')">Place Bid</button>
+        <p id="price3">Highest bid: ₹2,000</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Online Auction Platform | Student Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
